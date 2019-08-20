@@ -1,0 +1,14 @@
+[
+  {
+    "executorIds":[12230],
+    "locked":false,
+    "planAmount":100,
+    "planBeginTime":"1566208800000",
+    "planEndTime":"1566209100000",
+    "processSeq":1,
+    "timeUnit": "m",
+    "workOrderCode":"81902",
+    "workingTime": "300000",
+    "workstationId":"2337"
+  }
+]

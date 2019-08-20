@@ -1,0 +1,40 @@
+{
+  "code":"0000000001",
+  "name":"0000000001",
+  "processList":[
+    {
+    "seq":1,
+    "nodes":[{
+      "nodeCode":1,
+      "processCode":"81901",
+      "successionMode":0,
+      "preparationTimeCategory":1,
+      "preparationTime":"60000",
+      "workstations":["2337"]
+    }]
+    },
+    {
+      "seq":2,
+      "nodes":[{
+        "nodeCode":2,
+        "processCode":"81902",
+        "successionMode":0,
+        "preparationTimeCategory":1,
+        "preparationTime":"60000",
+        "workstations":["2337"]
+      }]
+    },
+    {
+      "seq":3,
+      "nodes":[{
+        "nodeCode":3,
+        "processCode":"81903",
+        "successionMode":0,
+        "preparationTimeCategory":1,
+        "preparationTime":"60000",
+        "workstations":["2337"]
+      }]
+    }
+]
+
+}

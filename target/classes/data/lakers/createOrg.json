@@ -1,0 +1,19 @@
+
+{
+  "entId": 1,
+  "code": "400001",
+  "name": "400001",
+  "globalUniqueName":"400001",
+  "expiration": "1650902400000",
+  "quota": 10,
+  "remark": "string",
+  "type": 2,
+  "roles": [
+    {
+      "id": 25,
+      "quota": 1
+    }
+  ],
+  "xlanguage":"cn_ZH"
+}
+//feature 环境的全局测试账号的roleID = 25

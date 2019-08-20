@@ -1,0 +1,18 @@
+{
+  "materialLotId": null,
+  "transactionCode": null,
+  "amountBefore": null,
+  "amountDiff": null,
+  "mfgBatches": [
+    {
+      "materialCode": "string",
+      "mfgBatchNo": "string"
+    }
+  ],
+  "remark": "string",
+  "projectCode": "string",
+  "supplierCode": "string",
+  "attachments": [
+    0
+  ]
+}

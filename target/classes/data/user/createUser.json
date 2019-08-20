@@ -1,0 +1,18 @@
+{
+  "username": "username_admin",
+  "name": "name_admin",
+  "phone": "19423000001",
+  "email": "string@qq.com",
+  "fake": false,
+  "roleIds": [
+    25
+  ]
+//  "workgroupIds": [
+//    0
+//  ],
+//  "workDepartmentIds": [
+//    0
+//  ]
+}
+
+//feature 环境的全局测试账号的roleID = 25

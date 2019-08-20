@@ -1,0 +1,32 @@
+{
+  "productMaterialCode":"" ,
+  "currentUnitId": "",
+  "defNum":1,
+  "rawMaterialList": [
+  {
+    "amount": "2",
+    "lossRate": "2",
+    "materialCode": "",
+    "regulatoryControl": true,
+    "weight": false,
+    "currentUnitId": ""
+  },
+  {
+    "amount": "3",
+    "lossRate": "3",
+    "materialCode": "",
+    "regulatoryControl": true,
+    "weight": false,
+    "currentUnitId": ""
+  },
+  {
+    "amount": "4",
+    "lossRate": "4",
+    "materialCode": "",
+    "regulatoryControl": true,
+    "weight": false,
+    "currentUnitId": ""
+  }],
+"status": 1,
+"version": "001"
+}
