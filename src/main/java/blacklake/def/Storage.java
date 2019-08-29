@@ -2,6 +2,7 @@ package blacklake.def;
 
 import config.Environment;
 import common.RequestObject;
+import io.restassured.response.ValidatableResponse;
 
 import java.util.HashMap;
 
@@ -13,23 +14,23 @@ public class Storage {
     @Param parentCode
     @Param level
      */
-    public static String createStorage1(String code,String name,String parentCode,int level) {
+    public static ValidatableResponse createStorage1(String code, String name, String parentCode, int level) {
         HashMap<String, String> body = new HashMap<String, String>();
         body.put("code", code);
         body.put("name", name);
         body.put("parentCode", parentCode);
         body.put("level", level+"");
-        RequestObject.postRequest(Environment.server_def,"/v1/storage", body);
-        return code;
+        ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/storage", body);
+        return response;
     }
 
-    public static String createStorage2(String code,String name,String parentCode,int level) {
+    public static ValidatableResponse createStorage2(String code,String name,String parentCode,int level) {
         HashMap<String, String> body = new HashMap<String, String>();
         body.put("code", code);
         body.put("name", name);
         body.put("parentCode", parentCode);
         body.put("level", level+"");
-        RequestObject.postRequest(Environment.server_def,"/v1/storage", body);
-        return code;
+        ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/storage", body);
+        return response;
     }
 }

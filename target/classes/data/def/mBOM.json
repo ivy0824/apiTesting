@@ -1,0 +1,901 @@
+{
+
+  "bindEBomToProcessRouting": true,
+  "currentUnit": {
+    "id": 0
+  },
+  "currentUnitId": 0,
+  "defNum": 0,
+  "ebomVersion": "string",
+  "inputMaterialCodes": "string",
+  "material": {
+    "checkDate": "string",
+    "code": "string",
+    "fifo": true,
+    "frozenTime": 0,
+    "needRequestMaterial": 0,
+    "preCheckDays": 0,
+    "proHoldUnitId": 0,
+    "proUseUnitId": 0,
+    "replaceMaterialList": [
+      {
+        "code": "string",
+        "desc": "string",
+        "materialCustomFields": [
+          {
+            "createdAt": {
+              "date": 0,
+              "day": 0,
+              "hours": 0,
+              "minutes": 0,
+              "month": 0,
+              "nanos": 0,
+              "seconds": 0,
+              "time": 0,
+              "timezoneOffset": 0,
+              "year": 0
+            },
+            "keyName": "string",
+            "keyValue": "string",
+            "materialCode": "string",
+            "orgId": 0,
+            "updatedAt": {
+              "date": 0,
+              "day": 0,
+              "hours": 0,
+              "minutes": 0,
+              "month": 0,
+              "nanos": 0,
+              "seconds": 0,
+              "time": 0,
+              "timezoneOffset": 0,
+              "year": 0
+            }
+          }
+        ],
+        "name": "string"
+      }
+    ],
+    "safeStorageAmount": 0,
+    "unitId": 0,
+    "validTime": 0,
+    "warningTime": 0
+  },
+  "materialCode": "string",
+  "processCodes": "string",
+  "processList": [
+    {
+      "inputMaterial": {
+        "amount": 0,
+        "currentUnitId": 0,
+        "lossRate": 0,
+        "material": {
+          "checkDate": "string",
+          "code": "string",
+          "fifo": true,
+          "frozenTime": 0,
+          "needRequestMaterial": 0,
+          "preCheckDays": 0,
+          "proHoldUnitId": 0,
+          "proUseUnitId": 0,
+          "replaceMaterialList": [
+            {
+              "code": "string",
+              "desc": "string",
+              "name": "string"
+            }
+          ],
+          "safeStorageAmount": 0,
+          "status": 0,
+          "type": 0,
+          "unitId": 0,
+          "validTime": 0,
+          "warningTime": 0
+        },
+        "materialCode": "string",
+        "materialProductionMode": 0,
+        "regulatoryControl": true,
+        "seq": "string",
+        "weight": true
+      },
+      "outputMaterial": {
+        "amount": 0,
+
+        "currentUnitId": 0,
+        "lossRate": 0,
+        "material": {
+          "attachmentDetails": [
+            {
+              "id": 0,
+              "originalExtension": "string",
+              "originalFileName": "string",
+              "uploaderAccountId": "string",
+              "uri": "string",
+              "url": "string"
+            }
+          ],
+          "attachments": [
+            0
+          ],
+          "checkDate": "string",
+          "code": "string",
+          "createdAt": {
+            "date": 0,
+            "day": 0,
+            "hours": 0,
+            "minutes": 0,
+            "month": 0,
+            "nanos": 0,
+            "seconds": 0,
+            "time": 0,
+            "timezoneOffset": 0,
+            "year": 0
+          },
+          "desc": "string",
+          "fifo": true,
+          "frozenTime": 0,
+          "inputFactoryQcConfigDetails": [
+            {
+              "attachmentDetails": [
+                {
+                  "id": 0,
+                  "originalExtension": "string",
+                  "originalFileName": "string",
+                  "uploaderAccountId": "string",
+                  "uri": "string",
+                  "url": "string"
+                }
+              ],
+              "attachments": [
+                0
+              ],
+              "autoCreateQcTask": true,
+              "checkCount": 0,
+              "checkCountType": 0,
+              "checkEntityType": 0,
+              "checkEntityUnitCount": 0,
+              "checkEntityUnitUnit": "string",
+              "checkType": 0,
+              "code": "string",
+              "createdAt": 0,
+              "id": 0,
+              "name": "string",
+              "nodeCode": "string",
+              "orgId": 0,
+              "parentId": 0,
+              "qcCheckItemConfigs": [
+                {
+                  "base": 0,
+                  "checkCountType": 0,
+                  "checkItem": {
+                    "code": "string",
+                    "createdAt": 0,
+                    "desc": "string",
+                    "group": {
+                      "createdAt": 0,
+                      "id": 0,
+                      "name": "string",
+                      "orgId": 0,
+                      "qcCheckItems": [
+                        {}
+                      ],
+                      "updatedAt": 0
+                    },
+                    "groupId": 0,
+                    "id": 0,
+                    "method": "string",
+                    "name": "string",
+                    "orgId": 0,
+                    "spell": "string",
+                    "standard": "string",
+                    "updatedAt": 0
+                  },
+                  "checkItemId": 0,
+                  "checkNums": 0,
+                  "createdAt": 0,
+                  "desc": "string",
+                  "id": 0,
+                  "logic": 0,
+                  "max": 0,
+                  "method": "string",
+                  "min": 0,
+                  "orgId": 0,
+                  "qcAqlConfig": {
+                    "checkItemId": 0,
+                    "orgId": 0,
+                    "qcAqlId": 0,
+                    "qcAqlInspectionLevelId": 0,
+                    "qcAqlInspectionLevelName": "string",
+                    "qcAqlValue": 0,
+                    "qcCheckItemConfigId": 0,
+                    "qcConfigId": 0
+                  },
+                  "qcAqlId": 0,
+                  "qcAqlInspectionLevelId": 0,
+                  "qcAqlInspectionLevelName": "string",
+                  "qcAqlValue": 0,
+                  "qcConfigId": 0,
+                  "qcDefectConfigs": [
+                    {
+                      "id": 0,
+                      "orgId": 0,
+                      "qcCheckItemConfigId": 0,
+                      "qcCheckItemId": 0,
+                      "qcConfigId": 0,
+                      "qcDefectReasonId": 0,
+                      "qcDefectReasonName": "string"
+                    }
+                  ],
+                  "seq": 0,
+                  "standard": "string",
+                  "unit": {
+                    "createdAt": {
+                      "date": 0,
+                      "day": 0,
+                      "hours": 0,
+                      "minutes": 0,
+                      "month": 0,
+                      "nanos": 0,
+                      "seconds": 0,
+                      "time": 0,
+                      "timezoneOffset": 0,
+                      "year": 0
+                    },
+                    "desc": "string",
+                    "id": 0,
+                    "name": "string",
+                    "orgId": 0,
+                    "status": 0,
+                    "updatedAt": {
+                      "date": 0,
+                      "day": 0,
+                      "hours": 0,
+                      "minutes": 0,
+                      "month": 0,
+                      "nanos": 0,
+                      "seconds": 0,
+                      "time": 0,
+                      "timezoneOffset": 0,
+                      "year": 0
+                    }
+                  },
+                  "unitId": 0,
+                  "updatedAt": 0
+                }
+              ],
+              "qcConfigMaterials": [
+                {
+                  "id": 0,
+                  "materialCode": "string",
+                  "materialName": "string",
+                  "orgId": 0,
+                  "qcConfigId": 0,
+                  "qcUnitId": 0,
+                  "qcUnitName": "string"
+                }
+              ],
+              "qcUnit": {
+                "createdAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                },
+                "masterUnitCount": 0,
+                "masterUnitId": 0,
+                "materialCode": "string",
+                "orgId": 0,
+                "qcConfigId": 0,
+                "qcUnitCount": 0,
+                "qcUnitId": 0,
+                "qcUnitName": "string",
+                "updatedAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                }
+              },
+              "recordCheckItemType": 0,
+              "recordSampleResultType": 0,
+              "recordType": 0,
+              "refId": 0,
+              "scrapInspection": true,
+              "state": 0,
+              "taskCreateCount": 0,
+              "taskCreateInterval": 0,
+              "taskCreateType": 0,
+              "updatedAt": 0
+            }
+          ],
+          "inputFactoryQcConfigs": [
+            0
+          ],
+          "inputFactoryUnitId": 0,
+          "inputFactoryUnitName": "string",
+          "issueWarehouseId": 0,
+          "issueWarehouseName": "string",
+          "materialCustomFields": [
+            {
+              "createdAt": {
+                "date": 0,
+                "day": 0,
+                "hours": 0,
+                "minutes": 0,
+                "month": 0,
+                "nanos": 0,
+                "seconds": 0,
+                "time": 0,
+                "timezoneOffset": 0,
+                "year": 0
+              },
+              "keyName": "string",
+              "keyValue": "string",
+              "materialCode": "string",
+              "orgId": 0,
+              "updatedAt": {
+                "date": 0,
+                "day": 0,
+                "hours": 0,
+                "minutes": 0,
+                "month": 0,
+                "nanos": 0,
+                "seconds": 0,
+                "time": 0,
+                "timezoneOffset": 0,
+                "year": 0
+              }
+            }
+          ],
+          "materialTypes": [
+            {
+              "code": "string",
+              "createdAt": {
+                "date": 0,
+                "day": 0,
+                "hours": 0,
+                "minutes": 0,
+                "month": 0,
+                "nanos": 0,
+                "seconds": 0,
+                "time": 0,
+                "timezoneOffset": 0,
+                "year": 0
+              },
+              "id": 0,
+              "name": "string",
+              "orgId": 0,
+              "processRouting": {
+                "attachments": [
+                  0
+                ],
+                "code": "string",
+                "createdAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                },
+                "name": "string",
+                "orgId": 0,
+                "processList": [
+                  {
+                    "name": "string",
+                    "nodes": [
+                      {
+                        "attachments": [
+                          "string"
+                        ],
+                        "createdAt": {
+                          "date": 0,
+                          "day": 0,
+                          "hours": 0,
+                          "minutes": 0,
+                          "month": 0,
+                          "nanos": 0,
+                          "seconds": 0,
+                          "time": 0,
+                          "timezoneOffset": 0,
+                          "year": 0
+                        },
+                        "deliverable": true,
+                        "id": 0,
+                        "nodeCode": "string",
+                        "orgId": 0,
+                        "preparationTime": 0,
+                        "preparationTimeCategory": 0,
+                        "processCode": "string",
+                        "processRoutingCode": "string",
+                        "productDesc": "string",
+                        "qcConfigDetails": [
+                          {
+                            "attachmentDetails": [
+                              {
+                                "id": 0,
+                                "originalExtension": "string",
+                                "originalFileName": "string",
+                                "uploaderAccountId": "string",
+                                "uri": "string",
+                                "url": "string"
+                              }
+                            ],
+                            "attachments": [
+                              0
+                            ],
+                            "autoCreateQcTask": true,
+                            "checkCount": 0,
+                            "checkCountType": 0,
+                            "checkEntityType": 0,
+                            "checkEntityUnitCount": 0,
+                            "checkEntityUnitUnit": "string",
+                            "checkType": 0,
+                            "code": "string",
+                            "createdAt": 0,
+                            "id": 0,
+                            "name": "string",
+                            "nodeCode": "string",
+                            "orgId": 0,
+                            "parentId": 0,
+                            "qcCheckItemConfigs": [
+                              {
+                                "base": 0,
+                                "checkCountType": 0,
+                                "checkItem": {
+                                  "code": "string",
+                                  "createdAt": 0,
+                                  "desc": "string",
+                                  "group": {
+                                    "createdAt": 0,
+                                    "id": 0,
+                                    "name": "string",
+                                    "orgId": 0,
+                                    "qcCheckItems": [
+                                      {}
+                                    ],
+                                    "updatedAt": 0
+                                  },
+                                  "groupId": 0,
+                                  "id": 0,
+                                  "method": "string",
+                                  "name": "string",
+                                  "orgId": 0,
+                                  "spell": "string",
+                                  "standard": "string",
+                                  "updatedAt": 0
+                                },
+                                "checkItemId": 0,
+                                "checkNums": 0,
+                                "createdAt": 0,
+                                "desc": "string",
+                                "id": 0,
+                                "logic": 0,
+                                "max": 0,
+                                "method": "string",
+                                "min": 0,
+                                "orgId": 0,
+                                "qcAqlConfig": {
+                                  "checkItemId": 0,
+                                  "orgId": 0,
+                                  "qcAqlId": 0,
+                                  "qcAqlInspectionLevelId": 0,
+                                  "qcAqlInspectionLevelName": "string",
+                                  "qcAqlValue": 0,
+                                  "qcCheckItemConfigId": 0,
+                                  "qcConfigId": 0
+                                },
+                                "qcAqlId": 0,
+                                "qcAqlInspectionLevelId": 0,
+                                "qcAqlInspectionLevelName": "string",
+                                "qcAqlValue": 0,
+                                "qcConfigId": 0,
+                                "qcDefectConfigs": [
+                                  {
+                                    "id": 0,
+                                    "orgId": 0,
+                                    "qcCheckItemConfigId": 0,
+                                    "qcCheckItemId": 0,
+                                    "qcConfigId": 0,
+                                    "qcDefectReasonId": 0,
+                                    "qcDefectReasonName": "string"
+                                  }
+                                ],
+                                "seq": 0,
+                                "standard": "string",
+                                "unit": {
+                                  "createdAt": {
+                                    "date": 0,
+                                    "day": 0,
+                                    "hours": 0,
+                                    "minutes": 0,
+                                    "month": 0,
+                                    "nanos": 0,
+                                    "seconds": 0,
+                                    "time": 0,
+                                    "timezoneOffset": 0,
+                                    "year": 0
+                                  },
+                                  "desc": "string",
+                                  "id": 0,
+                                  "name": "string",
+                                  "orgId": 0,
+                                  "status": 0,
+                                  "updatedAt": {
+                                    "date": 0,
+                                    "day": 0,
+                                    "hours": 0,
+                                    "minutes": 0,
+                                    "month": 0,
+                                    "nanos": 0,
+                                    "seconds": 0,
+                                    "time": 0,
+                                    "timezoneOffset": 0,
+                                    "year": 0
+                                  }
+                                },
+                                "unitId": 0,
+                                "updatedAt": 0
+                              }
+                            ],
+                            "qcConfigMaterials": [
+                              {
+                                "id": 0,
+                                "materialCode": "string",
+                                "materialName": "string",
+                                "orgId": 0,
+                                "qcConfigId": 0,
+                                "qcUnitId": 0,
+                                "qcUnitName": "string"
+                              }
+                            ],
+                            "qcUnit": {
+                              "createdAt": {
+                                "date": 0,
+                                "day": 0,
+                                "hours": 0,
+                                "minutes": 0,
+                                "month": 0,
+                                "nanos": 0,
+                                "seconds": 0,
+                                "time": 0,
+                                "timezoneOffset": 0,
+                                "year": 0
+                              },
+                              "masterUnitCount": 0,
+                              "masterUnitId": 0,
+                              "materialCode": "string",
+                              "orgId": 0,
+                              "qcConfigId": 0,
+                              "qcUnitCount": 0,
+                              "qcUnitId": 0,
+                              "qcUnitName": "string",
+                              "updatedAt": {
+                                "date": 0,
+                                "day": 0,
+                                "hours": 0,
+                                "minutes": 0,
+                                "month": 0,
+                                "nanos": 0,
+                                "seconds": 0,
+                                "time": 0,
+                                "timezoneOffset": 0,
+                                "year": 0
+                              }
+                            },
+                            "recordCheckItemType": 0,
+                            "recordSampleResultType": 0,
+                            "recordType": 0,
+                            "refId": 0,
+                            "scrapInspection": true,
+                            "state": 0,
+                            "taskCreateCount": 0,
+                            "taskCreateInterval": 0,
+                            "taskCreateType": 0,
+                            "updatedAt": 0
+                          }
+                        ],
+                        "qcConfigs": [
+                          0
+                        ],
+                        "seq": 0,
+                        "successionMode": 0,
+                        "updatedAt": {
+                          "date": 0,
+                          "day": 0,
+                          "hours": 0,
+                          "minutes": 0,
+                          "month": 0,
+                          "nanos": 0,
+                          "seconds": 0,
+                          "time": 0,
+                          "timezoneOffset": 0,
+                          "year": 0
+                        },
+                        "workstationGroups": [
+                          "string"
+                        ],
+                        "workstations": [
+                          "string"
+                        ]
+                      }
+                    ],
+                    "seq": 0
+                  }
+                ],
+                "status": 0,
+                "updatedAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                },
+                "validFrom": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                },
+                "validTo": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                }
+              },
+              "processRoutingCode": "string",
+              "status": 0,
+              "updatedAt": {
+                "date": 0,
+                "day": 0,
+                "hours": 0,
+                "minutes": 0,
+                "month": 0,
+                "nanos": 0,
+                "seconds": 0,
+                "time": 0,
+                "timezoneOffset": 0,
+                "year": 0
+              }
+            }
+          ],
+          "name": "string",
+          "needRequestMaterial": 0,
+          "orgId": 0,
+          "outputFactoryQcConfigDetails": [
+            {
+              "attachmentDetails": [
+                {
+                  "id": 0,
+                  "originalExtension": "string",
+                  "originalFileName": "string",
+                  "uploaderAccountId": "string",
+                  "uri": "string",
+                  "url": "string"
+                }
+              ],
+              "attachments": [
+                0
+              ],
+              "autoCreateQcTask": true,
+              "checkCount": 0,
+              "checkCountType": 0,
+              "checkEntityType": 0,
+              "checkEntityUnitCount": 0,
+              "checkEntityUnitUnit": "string",
+              "checkType": 0,
+              "code": "string",
+              "createdAt": 0,
+              "id": 0,
+              "name": "string",
+              "nodeCode": "string",
+              "orgId": 0,
+              "parentId": 0,
+              "qcCheckItemConfigs": [
+                {
+                  "base": 0,
+                  "checkCountType": 0,
+                  "checkItem": {
+                    "code": "string",
+                    "createdAt": 0,
+                    "desc": "string",
+                    "group": {
+                      "createdAt": 0,
+                      "id": 0,
+                      "name": "string",
+                      "orgId": 0,
+                      "qcCheckItems": [
+                        {}
+                      ],
+                      "updatedAt": 0
+                    },
+                    "groupId": 0,
+                    "id": 0,
+                    "method": "string",
+                    "name": "string",
+                    "orgId": 0,
+                    "spell": "string",
+                    "standard": "string",
+                    "updatedAt": 0
+                  },
+                  "checkItemId": 0,
+                  "checkNums": 0,
+                  "createdAt": 0,
+                  "desc": "string",
+                  "id": 0,
+                  "logic": 0,
+                  "max": 0,
+                  "method": "string",
+                  "min": 0,
+                  "orgId": 0,
+                  "qcAqlConfig": {
+                    "checkItemId": 0,
+                    "orgId": 0,
+                    "qcAqlId": 0,
+                    "qcAqlInspectionLevelId": 0,
+                    "qcAqlInspectionLevelName": "string",
+                    "qcAqlValue": 0,
+                    "qcCheckItemConfigId": 0,
+                    "qcConfigId": 0
+                  },
+                  "qcAqlId": 0,
+                  "qcAqlInspectionLevelId": 0,
+                  "qcAqlInspectionLevelName": "string",
+                  "qcAqlValue": 0,
+                  "qcConfigId": 0,
+                  "qcDefectConfigs": [
+                    {
+                      "id": 0,
+                      "orgId": 0,
+                      "qcCheckItemConfigId": 0,
+                      "qcCheckItemId": 0,
+                      "qcConfigId": 0,
+                      "qcDefectReasonId": 0,
+                      "qcDefectReasonName": "string"
+                    }
+                  ],
+                  "seq": 0,
+                  "standard": "string",
+                  "unit": {
+                    "createdAt": {
+                      "date": 0,
+                      "day": 0,
+                      "hours": 0,
+                      "minutes": 0,
+                      "month": 0,
+                      "nanos": 0,
+                      "seconds": 0,
+                      "time": 0,
+                      "timezoneOffset": 0,
+                      "year": 0
+                    },
+                    "desc": "string",
+                    "id": 0,
+                    "name": "string",
+                    "orgId": 0,
+                    "status": 0,
+                    "updatedAt": {
+                      "date": 0,
+                      "day": 0,
+                      "hours": 0,
+                      "minutes": 0,
+                      "month": 0,
+                      "nanos": 0,
+                      "seconds": 0,
+                      "time": 0,
+                      "timezoneOffset": 0,
+                      "year": 0
+                    }
+                  },
+                  "unitId": 0,
+                  "updatedAt": 0
+                }
+              ],
+              "qcUnit": {
+                "createdAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                },
+                "masterUnitCount": 0,
+                "masterUnitId": 0,
+                "materialCode": "string",
+                "orgId": 0,
+                "qcConfigId": 0,
+                "qcUnitCount": 0,
+                "qcUnitId": 0,
+                "qcUnitName": "string",
+                "updatedAt": {
+                  "date": 0,
+                  "day": 0,
+                  "hours": 0,
+                  "minutes": 0,
+                  "month": 0,
+                  "nanos": 0,
+                  "seconds": 0,
+                  "time": 0,
+                  "timezoneOffset": 0,
+                  "year": 0
+                }
+              },
+              "recordCheckItemType": 0,
+              "recordSampleResultType": 0,
+              "recordType": 0,
+              "refId": 0,
+              "scrapInspection": true,
+              "state": 0,
+              "taskCreateCount": 0,
+              "taskCreateInterval": 0,
+              "taskCreateType": 0,
+              "updatedAt": 0
+            }
+          ],
+          "preCheckDays": 0,
+          "proHoldUnitId": 0,
+          "proHoldUnitName": "string",
+          "proUseUnitId": 0,
+          "proUseUnitName": "string",
+          "replaceMaterialList": [
+            {
+              "code": "string",
+              "name": "string"
+            }
+          ],
+          "unitId": 0,
+          "validTime": 0,
+          "warningTime": 0
+        },
+        "materialCode": "string",
+        "materialProductionMode": 0,
+        "regulatoryControl": true,
+        "seq": "string",
+        "weight": true
+      },
+      "seq": 0
+    }
+  ],
+  "processRoutingCode": "string",
+  "version": "string",
+  "eBomVersion": "string"
+}

@@ -5,6 +5,7 @@
   "desc": "402001",
   "status": 1,
   "unitId": 2340,
-  "fifo": true
+  "fifo": true,
+  "qualityStatus":[1]
 
 }

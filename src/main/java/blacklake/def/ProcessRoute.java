@@ -26,6 +26,7 @@ public class ProcessRoute {
 
     public static void updateProcessRouteStatus(String code){
         HashMap<String, String> body = new HashMap<String, String>();
+        body.put("status","1");
         RequestObject.putRequest(Environment.server_def, "/v1/process_routes/"+code+"/status", body);
     }
 }

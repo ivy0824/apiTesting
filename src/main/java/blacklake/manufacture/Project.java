@@ -2,6 +2,7 @@ package blacklake.manufacture;
 
 import common.RequestObject;
 import config.Environment;
+import io.restassured.response.ValidatableResponse;
 
 import java.util.HashMap;
 
@@ -13,11 +14,12 @@ public class Project {
      * @param fromStatus
      * @param toStatus
      */
-    public static void UpdateProject(int projectCode, String fromStatus,String toStatus) {
+    public static ValidatableResponse UpdateProject(String projectCode, String fromStatus, String toStatus) {
         HashMap<String, Object> body = new HashMap<String, Object>();
         body.put("fromStatus", fromStatus);
         body.put("toStatus", toStatus);
-        RequestObject.postRequest(Environment.server_manufacture, "/v1/"+projectCode+"/status", body);
+        ValidatableResponse response = RequestObject.putRequest(Environment.server_manufacture, "/v1/project/"+projectCode+"/status", body);
+        return response;
 
     }
 }

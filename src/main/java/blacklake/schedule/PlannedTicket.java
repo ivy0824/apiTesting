@@ -1,11 +1,15 @@
 package blacklake.schedule;
 
+import common.JsonReader;
 import common.RequestObject;
+import common.StringToMap;
 import config.Environment;
 
 import java.util.HashMap;
 
 public class PlannedTicket {
+
+    static int[] Id = {RequestObject.userId};
 
     /**
      * 创建计划工单
@@ -16,21 +20,36 @@ public class PlannedTicket {
      * @param selectType
      * @return
      */
-    public static void createPlannedTicket(int amount, String code, String materialCode, String processRouteCode, String selectType) {
+    public static void createPlannedTicket(int amount, String code, String materialCode, String processRouteCode,String ebomVersion,String mbomVersion, String selectType) {
 
-        HashMap<String, Object> body = new HashMap<String, Object>();
+        HashMap<String, Object> map = new HashMap<String, Object>();
         int[] id = new int[1];
         id[0] = RequestObject.userId;
-        body.put("amount", amount);
-        body.put("code", code);
-        body.put("materialCode", materialCode);
-        body.put("processRouteCode", processRouteCode);
-        body.put("selectType", selectType);
-        body.put("managerId",id);
-        body.put("plannerId", id);
-        body.put("type", 1);
-        body.put("priority", 1);
-        RequestObject.postRequest(Environment.server_scheduling, "/v1/work_order", body);
+        map.put("amount", amount);
+        map.put("code", code);
+        map.put("materialCode", materialCode);
+        map.put("processRouteCode", processRouteCode);
+        map.put("ebomVersion",ebomVersion);
+        map.put("mbomVersion",mbomVersion);
+        map.put("selectType", selectType);
+        map.put("managerId",id);
+        map.put("plannerId", id);
+        String result;
+        HashMap<String, Object> body = new HashMap<String, Object>();
+        result = JsonReader.getJson("/data/schedule/workOrder.json",map);
+        body = StringToMap.StringToMap(result);
+        if(ebomVersion==null & mbomVersion==null){
+            body.remove("ebomVersion");
+            body.remove("mbomVersion");
+            RequestObject.postRequest(Environment.server_scheduling, "/v1/work_order", body);
+        }else if(mbomVersion==null) {
+            body.remove("mbomVersion");
+            RequestObject.postRequest(Environment.server_scheduling, "/v1/work_order", body);
+        }else if(processRouteCode==null & ebomVersion==null){
+            body.remove("processRouteCode");
+            body.remove("ebomVersion");
+            RequestObject.postRequest(Environment.server_scheduling, "/v1/work_order", body);
+        }
 
     }
 }

@@ -7,13 +7,388 @@
   "expiration": "1650902400000",
   "quota": 10,
   "remark": "string",
-  "type": 2,
+  "type": 1,
   "roles": [
     {
+      "id": 1,
+      "quota": 10
+    },
+    {
+      "id": 2,
+      "quota": 10
+    },
+    {
+      "id": 3,
+      "quota": 10
+    },
+    {
+      "id": 4,
+      "quota": 10
+    },
+    {
+      "id": 5,
+      "quota": 10
+    },
+    {
+      "id": 6,
+      "quota": 10
+    },
+    {
+      "id": 7,
+      "quota": 10
+    },
+    {
+      "id": 8,
+      "quota": 10
+    },
+    {
+      "id": 9,
+      "quota": 10
+    },
+    {
+      "id": 10,
+      "quota": 10
+    },
+    {
+      "id": 11,
+      "quota": 10
+    },
+    {
+      "id": 12,
+      "quota": 10
+    },
+    {
+      "id": 13,
+      "quota": 10
+    },
+    {
+      "id": 14,
+      "quota": 10
+    },
+    {
+      "id": 15,
+      "quota": 10
+    },
+    {
+      "id": 16,
+      "quota": 10
+    },
+    {
       "id": 25,
-      "quota": 1
+      "quota": 10
+    },
+    {
+      "id": 37,
+      "quota": 10
+    },
+    {
+      "id": 38,
+      "quota": 10
+    },
+    {
+      "id": 39,
+      "quota": 10
+    },
+    {
+      "id": 40,
+      "quota": 10
+    },
+    {
+      "id": 41,
+      "quota": 10
+    },
+    {
+      "id": 42,
+      "quota": 10
+    },
+    {
+      "id": 43,
+      "quota": 10
+    },
+    {
+      "id": 44,
+      "quota": 10
+    },
+    {
+      "id": 45,
+      "quota": 10
+    },
+    {
+      "id": 46,
+      "quota": 10
+    },
+    {
+      "id": 47,
+      "quota": 10
     }
   ],
-  "xlanguage":"cn_ZH"
+  "xlanguage":"cn_ZH",
+  "configs": [
+    {
+      "configKey": "config_use_qrcode",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_use_control",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_parallel_process",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_task_dispatch_type",
+      "configValue": "manager"
+    },
+    {
+      "configKey": "config_task_operator_exclusive",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_device_repair_task_audit",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_max_subscribe_level",
+      "configValue": "3"
+    },
+    {
+      "configKey": "config_hist_output_report_time",
+      "configValue": "0:00"
+    },
+    {
+      "configKey": "config_hist_material_stock_report_time",
+      "configValue": "0:00"
+    },
+    {
+      "configKey": "config_material_request_type",
+      "configValue": "2"
+    },
+    {
+      "configKey": "config_material_request_control",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_material_request_ack",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_material_lot_use_global",
+      "configValue": "true"
+    },
+    {
+      "configKey": "erpSyncConfig",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_trace_mode",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_group_leader_report",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_equipment_clean_status",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_unit_conversion",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_use_iso_purchase_order",
+      "configValue": "true"
+    },
+    {
+      "configKey": "use_waiting_for_check_material_config",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_check_task_succession",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_project_edit",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_weighing",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_document_management",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_plan_work_order_audit",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_obvious_tallying",
+      "configValue": "2"
+    },
+    {
+      "configKey": "config_use_batch_on_process",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_device_calibration",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_validity_notify",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_produce_use_priority",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_produce_task_deliverable",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_produce_use_priority_control",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_mbom_tooling",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_transfer_control",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_material_transfer_print",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_weighing_instruction_complete",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_plan_work_order_baiting",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_sop",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_use_qc_task_print_tag",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_check_date",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_lot_map",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_inbound_order_audit",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_unmovable_material_qcstatus",
+      "configValue": ""
+    },
+    {
+      "configKey": "config_plan_work_order_inject_mold",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_plan_work_order_product",
+      "configValue": "true"
+    },
+    {
+      "configKey": "config_qc_defect_ranked",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_request_transcation",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_produce_task_material_control",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_admit_print",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_material_admit_label",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_frozen_time",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_qc_report_record_count_settable",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_product_batch_manual_modify",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_qc_check_item_remarkable",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_qc_report_audit",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_repeat_qc_audit",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_origin_qc_task_control",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_agv_control",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_batch_record",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_batch_record_audit",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_schedule_task",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_validity_period_presicion",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_planner_control",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_if_over_procure_infactory",
+      "configValue": "1"
+    },
+    {
+      "configKey": "config_qc_check_item_coding_manually",
+      "configValue": "false"
+    },
+    {
+      "configKey": "config_material_transfer_display_unit",
+      "configValue": "false"
+    }
+  ]
+
 }
 //feature 环境的全局测试账号的roleID = 25

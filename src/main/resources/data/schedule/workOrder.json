@@ -1,0 +1,17 @@
+{
+  "code": "string",
+  "type": 1,
+  "materialCode": "string",
+  "amount": "string",
+  "plannerId": [
+    11
+  ],
+  "managerId": [
+    11
+  ],
+  "priority": 1,
+  "selectType": null,
+  "processRouteCode": null,
+  "ebomVersion":null,
+  "mbomVersion": null
+}

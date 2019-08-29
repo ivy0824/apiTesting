@@ -15,6 +15,7 @@ public class Environment {
     //feature 环境 手机号：11000100001 密码：360316
 
     public static final String url = "-test.test.blacklake.tech";
+//    public static final String url = "-web-staging.blacklake.tech";
 
 
 

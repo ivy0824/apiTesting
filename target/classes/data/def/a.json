@@ -1,0 +1,22 @@
+{
+  "code": "0000000220",
+  "name": "qualityStatus",
+  "status": 1,
+  "alwaysOneCode": 0,
+  "attachments": null,
+  "code": "0000000220",
+  "codeScanNum": 2,
+  "deliverable": false,
+  "fifo": 1,
+  "name": "qualityStatus",
+  "outputFrozenCategory": 0,
+  "processDefects": [
+
+  ],
+  "status": 1,
+  "unqualifiedProducts": 0,
+  "workstationGroups": [],
+  "workstations": [
+  1857
+  ]
+}

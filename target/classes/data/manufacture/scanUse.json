@@ -1,0 +1,8 @@
+{
+  "taskId": 0,
+  "code": "string",
+  "amount": 0,
+  "unit": "string",
+  "useMode": 0,
+  "forced": true
+}

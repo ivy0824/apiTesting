@@ -2,6 +2,7 @@ package common;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import config.DataPrepare;
 import config.Environment;
 import io.restassured.response.ValidatableResponse;
 import org.springframework.context.annotation.Bean;
@@ -18,10 +19,10 @@ public class RequestObject {
     public static final String url = Environment.url;
 
     //common data
-    public static int orgId = 133;
-    public static int userId = 12230;
+    public static int orgId = DataPrepare.orgId;
+    public static int userId = DataPrepare.userId;
     public static String userName = "admin";
-    public static int workstationId = 2337;
+    public static int workstationId = DataPrepare.workstationId;
 
 
     /**
@@ -74,6 +75,42 @@ public class RequestObject {
                 .body(body)
                 .log().all()
                 .when().put("http://"+server+url + path)
+                .then()
+                .log().all();
+    }
+
+    /**
+     * patch请求
+     * @param server
+     * @param path
+     * @param body
+     * @return
+     */
+
+    public static ValidatableResponse patchRequest(String server, String path, Object body){
+
+        return given()
+                .contentType("application/json")
+                .header("X-Org-Id", orgId)
+                .header("X-User-Id",userId)
+                .header("X-User-Name",userName)
+                .body(body)
+                .log().all()
+                .when().patch("http://"+server+url + path)
+                .then()
+                .log().all();
+    }
+
+    public static ValidatableResponse getRequest(String server, String path, HashMap param){
+
+        return given()
+                .contentType("application/json")
+                .header("X-Org-Id", orgId)
+                .header("X-User-Id",userId)
+                .header("X-User-Name",userName)
+                .params(param)
+                .log().all()
+                .when().get("http://"+server+url + path)
                 .then()
                 .log().all();
     }
