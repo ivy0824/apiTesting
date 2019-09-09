@@ -5,22 +5,19 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 //忽略序列化问题
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 
-public class CodeAndAmount {
+public class CodesAndAmounts {
     private Double amount;
     private String code;
-    private String unit;
 
-    public CodeAndAmount(Double amount, String code, String unit) {
+    public CodesAndAmounts(Double amount, String code) {
         this.amount = amount;
         this.code = code;
-        this.unit = unit;
     }
 
     public String toString() {
-        return "CodeAndAmount{" +
+        return "CodesAndAmounts{" +
                 "amount='" + amount + '\'' +
                 ",code='" + code + '\'' +
-                ",unit;" + unit + '\'' +
                 '}';
     }
 }

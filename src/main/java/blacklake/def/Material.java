@@ -7,8 +7,6 @@ import config.Environment;
 import common.RequestObject;
 import io.restassured.response.ValidatableResponse;
 import org.springframework.context.annotation.Bean;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Material {

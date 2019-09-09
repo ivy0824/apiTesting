@@ -11,16 +11,16 @@ public class PurchaseAdmit {
 
     private int procureOrderId;
     private int procureOrderDetailId;
-    private ArrayList<CodeAndAmount> codeAndAmount;
+    private ArrayList<CodesAndAmounts> codesAndAmounts;
     private String supplierCode;
     private String materialCode;
     private Object storageId;
 
 
-    public PurchaseAdmit(int procureOrderId,int procureOrderDetailId, ArrayList<CodeAndAmount> codeAndAmount,String supplierCode,String materialCode, Object storageId ) {
+    public PurchaseAdmit(int procureOrderId, int procureOrderDetailId, ArrayList<CodesAndAmounts> codesAndAmounts, String supplierCode, String materialCode, Object storageId ) {
         this.procureOrderId = procureOrderId;
         this.procureOrderDetailId = procureOrderDetailId;
-        this.codeAndAmount = codeAndAmount;
+        this.codesAndAmounts = codesAndAmounts;
         this.supplierCode = supplierCode;
         this.materialCode = materialCode;
         this.storageId = storageId;
@@ -30,7 +30,7 @@ public class PurchaseAdmit {
         return "Admit{" +
                 "procureOrderId='" + procureOrderId + '\''+
                 ",procureOrderDetailId='" + procureOrderDetailId + '\''+
-                ",codeAndAmount='" + codeAndAmount + '\'' +
+                ",codesAndAmounts='" + codesAndAmounts + '\'' +
                 ",supplierCode;" + supplierCode + '\''+
                 ",materialCode='" + materialCode + '\'' +
                 ",storageId=" + storageId +

@@ -1,0 +1,17 @@
+{
+  "taskId": 0,
+  "code": "string",
+  "amount": 0,
+  "unit": "string",
+  "storageId": 0,
+  "rawMaterialLotIds": [
+    0
+  ],
+  "startTime": 0,
+  "endTime": 0,
+  "producerIds": [
+    0
+  ],
+  "batchNumber": "string",
+  "remark": "string"
+}

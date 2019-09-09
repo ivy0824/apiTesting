@@ -3,6 +3,6 @@
   "code": "string",
   "amount": 0,
   "unit": "string",
-  "useMode": 0,
+  "useMode": 1,
   "forced": true
 }
