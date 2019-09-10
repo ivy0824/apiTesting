@@ -3,6 +3,7 @@ package blacklake.def;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import common.JsonReader;
+import config.DataPrepare;
 import config.Environment;
 import common.RequestObject;
 import io.restassured.response.ValidatableResponse;
@@ -31,12 +32,13 @@ public class Material {
      */
     public static ValidatableResponse createMaterial(String code, String name) {
         String unitName = (int) (Math.random() * 10000) + "";
+        DataPrepare.unitName = unitName;
         String unitId = Unit.getUnitResponse(unitName, "data.id");
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("code", code);
         map.put("name", name);
         map.put("unitId",unitId);
-        String body = JsonReader.getJson("/data/def/material.json",map);
+        String body = JsonReader.getJsonToString("/data/def/material.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/material", body);
         return response;
     }

@@ -26,7 +26,7 @@ public class Processs {
         map.put("alwaysOneCode",alwaysOneCode);
         map.put("deliverable",deliverable);
         map.put("workstations",workstations);
-        String body = JsonReader.getJson("/data/def/a.json",map);
+        String body = JsonReader.getJsonToString("/data/def/a.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/process",body);
         return response;
     }

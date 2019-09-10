@@ -1,19 +1,4 @@
 {
-  "bindEBomToProcessRouting": true,
-  "unitSelections": [
-    {
-      "id": 7603
-    }
-  ],
-  "currentUnitId": 7603,
-  "version": "91003",
-  "defNum": 1,
-  "materialCode": "C82701",
-  "validFrom": "",
-  "validTo": "",
-  "status": 1,
-  "ebomVersion": "001",
-  "processRoutingCode": "PR82701",
   "processList": [
     {
       "nodes": [
@@ -57,8 +42,7 @@
           ]
         }
       ],
-      "seq": 1,
-      "name": null
+      "seq": 1
     },
     {
       "nodes": [
@@ -102,8 +86,7 @@
           ]
         }
       ],
-      "seq": 2,
-      "name": null
+      "seq": 2
     },
     {
       "nodes": [
@@ -142,8 +125,8 @@
           ]
         }
       ],
-      "seq": 3,
-      "name": null
+      "seq": 3
     }
   ]
 }
+

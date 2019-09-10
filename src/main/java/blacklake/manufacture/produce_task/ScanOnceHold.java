@@ -15,7 +15,7 @@ public class ScanOnceHold {
         map.put("amount",amount);
         map.put("unit",unit);
         map.put("storageId",storageId);
-        String body = JsonReader.getJson("/data/manufacture/scanOnceHold.json",map);
+        String body = JsonReader.getJsonToString("/data/manufacture/scanOnceHold.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_manufacture, "/v1/produce/scanOnceHold", body);
         return response;
     }

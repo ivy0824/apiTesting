@@ -16,29 +16,29 @@ import static common.RequestObject.workstationId;
 
 public class CreateData {
 
-    @Test(priority = 0)
-    void createOrg() {
-        // 创建工厂
-        ValidatableResponse response = Org.createOrg(DataPrepare.orgCode, DataPrepare.orgCode);
-        //判断工厂是否创建成功
-        RequestObject.getStatus(response, 200);
-        int orgId = response.extract().path("data.id");
-
-        //将创建工厂的获取的 orgId 赋值到RequestObject方法中
-        RequestObject.orgId = orgId;
-
-        //创建用户
-        ValidatableResponse response1 = Org.createAdmin(orgId);
-        //判断用户是否创建成功
-        RequestObject.getStatus(response1, 200);
-        int userId = response1.extract().path("data.id");
-
-        //将创建工厂的获取的 userId 赋值到RequestObject方法中
-        RequestObject.userId = userId;
-
-        //修改用户角色
-        CreateUser.updateUser(userId, "系统管理员", "admin");
-    }
+//    @Test(priority = 0)
+//    void createOrg() {
+//        // 创建工厂
+//        ValidatableResponse response = Org.createOrg(DataPrepare.orgCode, DataPrepare.orgCode);
+//        //判断工厂是否创建成功
+//        RequestObject.getStatus(response, 200);
+//        int orgId = response.extract().path("data.id");
+//
+//        //将创建工厂的获取的 orgId 赋值到RequestObject方法中
+//        RequestObject.orgId = orgId;
+//
+//        //创建用户
+//        ValidatableResponse response1 = Org.createAdmin(orgId);
+//        //判断用户是否创建成功
+//        RequestObject.getStatus(response1, 200);
+//        int userId = response1.extract().path("data.id");
+//
+//        //将创建工厂的获取的 userId 赋值到RequestObject方法中
+//        RequestObject.userId = userId;
+//
+//        //修改用户角色
+//        CreateUser.updateUser(userId, "系统管理员", "admin");
+//    }
     @Test(priority = 1)
     void createWorkStationAndStorage() {
         //创建工位
@@ -83,20 +83,10 @@ public class CreateData {
         //判断物料清单是够创建成功
         RequestObject.getStatus(response6,200);
     }
-//    @Test(priority = 3)
-//    void createMbom(){
-//        //创建物料
-//        ValidatableResponse response5 = Material.createMaterial(DataPrepare.materialCode1,DataPrepare.materialCode1);
-//        RequestObject.getStatus(response5,200);
-//        Material.createMaterial(DataPrepare.materialCode2,DataPrepare.materialCode2);
-//        Material.createMaterial(DataPrepare.materialCode3,DataPrepare.materialCode3);
-//        Material.createMaterial(DataPrepare.materialCode4,DataPrepare.materialCode4);
-//
-//        // 创建物料清单
-//        ValidatableResponse response6 = EBOM.createEbom(DataPrepare.materialCode1,DataPrepare.materialCode2,DataPrepare.materialCode3,DataPrepare.materialCode4);
-//        //判断物料清单是够创建成功
-//        RequestObject.getStatus(response6,200);
-//    }
+    @Test(priority = 3)
+    void createMbom(){
+        MBOM.createMbom();
+    }
 
     @Test(priority = 4)
     void createProcessRoute(){
@@ -106,10 +96,16 @@ public class CreateData {
         Processs.createProcess(DataPrepare.processCode2,"单词扫码","1","1",false, workstations);
         Processs.createProcess(DataPrepare.processCode3,"一码到底","2","1",true, workstations);
 
-        //创建工艺路线
-        ValidatableResponse response7 = ProcessRoute.createProcessRoute(DataPrepare.processRouteCode,"工艺路线",workstations,DataPrepare.processCode1,DataPrepare.processCode2,DataPrepare.processCode3);
+        //创建两次扫码开始的工艺路线
+        ValidatableResponse response1 = ProcessRoute.createProcessRoute(DataPrepare.processRouteCode,"工艺路线",workstations,DataPrepare.processCode1,DataPrepare.processCode2,DataPrepare.processCode3);
         //判断工艺路线是够创建成功
-        RequestObject.getStatus(response7,200);
+        RequestObject.getStatus(response1,200);
+        ProcessRoute.updateProcessRouteStatus(DataPrepare.processRouteCode);
+
+        //创建单次扫码开始的工艺路线
+        ValidatableResponse response2 = ProcessRoute.createProcessRoute(DataPrepare.processRouteCode,"工艺路线",workstations,DataPrepare.processCode2,DataPrepare.processCode1,DataPrepare.processCode3);
+        //判断工艺路线是够创建成功
+        RequestObject.getStatus(response2,200);
         ProcessRoute.updateProcessRouteStatus(DataPrepare.processRouteCode);
     }
 

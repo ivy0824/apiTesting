@@ -19,7 +19,7 @@ public class ProcessRoute {
         map.put("processList[0].nodes[0].processCode",processCode[0]);
         map.put("processList[1].nodes[0].processCode",processCode[1]);
         map.put("processList[2].nodes[0].processCode",processCode[2]);
-        String body = JsonReader.getJson("/data/def/processRoute.json",map);
+        String body = JsonReader.getJsonToString("/data/def/processRoute.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/process_routes",body);
         return response;
     }

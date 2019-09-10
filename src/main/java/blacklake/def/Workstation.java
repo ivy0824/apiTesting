@@ -29,7 +29,7 @@ public class Workstation {
         map.put("[1].id", userId+"");
         map.put("[2].id", userId+"");
         map.put("[3].id", userId+"");
-        String body = JsonReader.getJson("/data/def/relateUser.json",map);
+        String body = JsonReader.getJsonToString("/data/def/relateUser.json",map);
         ValidatableResponse response = RequestObject.putRequest(Environment.server_def, "/v1/workstationAreas/"+workstationId+"/workers", body);
         return response;
     }

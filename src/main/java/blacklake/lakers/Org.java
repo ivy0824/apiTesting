@@ -16,7 +16,7 @@ public class Org {
         HashMap<String,Object> map = new HashMap<String,Object>();
         map.put("code",code);
         map.put("globalUniqueName",globalUniqueName);
-        String body = JsonReader.getJson("/data/lakers/createOrg.json",map);
+        String body = JsonReader.getJsonToString("/data/lakers/createOrg.json",map);
         ValidatableResponse response = RequestObject.post(Environment.server_lakers,"/v1/orgs",body);
         return response;
 

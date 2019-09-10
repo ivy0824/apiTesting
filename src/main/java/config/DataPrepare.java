@@ -31,8 +31,8 @@ public class DataPrepare {
     public static String selectType = "processRoute";//processRoute,processRouteEbom,mbom
 
     //保留基础数据
-    public static int orgId = 283;
-    public static int userId = 12251;
+    public static int orgId = 2;
+    public static int userId = 16;
     public static String userName = "admin";
     public static int workstationId = 4634;
     public static int storageId = 12743;

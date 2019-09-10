@@ -30,7 +30,7 @@ public class TaskSchedule {
         map.put("[0].planBeginTime",planBeginTime);
         map.put("[0].planEndTime",planEndTime);
         map.put("[0].executorIds",executorsIds);
-        String body = JsonReader.getJson("/data/schedule/taskSchedule.json",map);
+        String body = JsonReader.getJsonToString("/data/schedule/taskSchedule.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_scheduling, "/v1/tasks/_bulk_manual", body);
         return response;
     }
@@ -42,7 +42,7 @@ public class TaskSchedule {
     public static ValidatableResponse distuibute(String code){
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("tasks[0].code",code);
-        String body = JsonReader.getJson("/data/schedule/distribute.json",map);
+        String body = JsonReader.getJsonToString("/data/schedule/distribute.json",map);
         ValidatableResponse response = RequestObject.putRequest(Environment.server_scheduling, "/v1/tasks/_bulk_distribute", body);
         return response;
     }

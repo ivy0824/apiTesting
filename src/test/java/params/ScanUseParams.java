@@ -26,7 +26,7 @@ public class ScanUseParams {
              Admit.admit(materialCodes[i], codesAndAmounts, DataPrepare.storageId);
          }
         return new Object[][]{
-                {DataPrepare.PEId1, qcCode+0, 10, DataPrepare.unitName, 1, true, 200, null},//部分投产成功
+                {DataPrepare.PEId1, qcCode+0, 10, DataPrepare.unitName, 1, true, 200, ""},//部分投产成功
                 {DataPrepare.PEId1, qcCode+0, 0, DataPrepare.unitName, 1, true, 400, "数量必须大于0"},
                 {DataPrepare.PEId1, qcCode+0, 100, DataPrepare.unitName, 1, true, 400, "投产数量 100 已超过物料总量 90，请检查"},
                 {DataPrepare.PEId1, qcCode+1, 100, DataPrepare.unitName, 1, true, 400, "eBom中没有该物料，不能投产"}

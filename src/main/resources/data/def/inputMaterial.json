@@ -1,0 +1,22 @@
+{
+  "inputMaterials": [
+    {
+      "materialCode": "C82702",
+      "amount": "1",
+      "currentUnitId": null,
+      "materialProductionMode": 1
+    },
+    {
+      "materialCode": "C82703",
+      "amount": "1",
+      "currentUnitId": null,
+      "materialProductionMode": 1
+    },
+    {
+      "materialCode": "C82704",
+      "amount": "1",
+      "currentUnitId": null,
+      "materialProductionMode": 1
+    }
+  ]
+}

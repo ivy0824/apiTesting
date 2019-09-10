@@ -36,7 +36,7 @@ public class PlannedTicket {
         map.put("plannerId", id);
         String result;
         HashMap<String, Object> body = new HashMap<String, Object>();
-        result = JsonReader.getJson("/data/schedule/workOrder.json",map);
+        result = JsonReader.getJsonToString("/data/schedule/workOrder.json",map);
         body = StringToMap.StringToMap(result);
         if(ebomVersion==null & mbomVersion==null){
             body.remove("ebomVersion");

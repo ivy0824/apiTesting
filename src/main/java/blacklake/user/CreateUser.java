@@ -13,7 +13,7 @@ public class CreateUser {
         HashMap<String,Object> map = new HashMap<String,Object>();
         map.put("name",name);
         map.put("username",username);
-        String body = JsonReader.getJson("/data/user/updateUserRole.json",map);
+        String body = JsonReader.getJsonToString("/data/user/updateUserRole.json",map);
         ValidatableResponse response = RequestObject.patchRequest(Environment.server_user,"/v1/users/"+userId,body);
         return response;
     }

@@ -49,7 +49,7 @@ public class EBOM {
         map.put("rawMaterialList[0].materialCode",materialCode[1]);
         map.put("rawMaterialList[1].materialCode",materialCode[2]);
         map.put("rawMaterialList[2].materialCode",materialCode[3]);
-        String body = JsonReader.getJson("/data/def/eBOM.json",map);
+        String body = JsonReader.getJsonToString("/data/def/eBOM.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/ebom",body);
         return response;
     }

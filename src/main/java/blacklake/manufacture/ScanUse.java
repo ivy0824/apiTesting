@@ -16,7 +16,7 @@ public class ScanUse {
         map.put("amount",amount);
         map.put("unit",unit);
         map.put("userMode",userMode);
-        String body = JsonReader.getJson("/data/manufacture/scanUse.json",map);
+        String body = JsonReader.getJsonToString("/data/manufacture/scanUse.json",map);
         ValidatableResponse response = RequestObject.postRequest(Environment.server_manufacture, "/v1/produce/scanUse", body);
         return response;
     }
