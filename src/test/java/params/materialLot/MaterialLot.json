@@ -1,0 +1,161 @@
+{
+  "data": [
+    {
+      "amount": 0,
+      "attachments": [
+        {
+          "createdAt": {
+            "date": 0,
+            "day": 0,
+            "hours": 0,
+            "minutes": 0,
+            "month": 0,
+            "nanos": 0,
+            "seconds": 0,
+            "time": 0,
+            "timezoneOffset": 0,
+            "year": 0
+          },
+          "id": 0,
+          "original_extension": "string",
+          "original_filename": "string",
+          "uploader_account_id": "string",
+          "uri": "string",
+          "url": "string"
+        }
+      ],
+      "code": "string",
+      "containerCode": "string",
+      "createdAt": 0,
+      "firstStorageInfo": {
+        "code": "string",
+        "id": 0,
+        "name": "string",
+        "parentId": 0,
+        "parentName": "string",
+        "qualityControlItems": [
+          0
+        ],
+        "qualityControlSwitch": true,
+        "status": 0,
+        "warehouseCategory": 0,
+        "warehouseCode": "string",
+        "warehouseName": "string"
+      },
+      "holdTaskId": 0,
+      "id": 0,
+      "inQC": true,
+      "inTrallying": 0,
+      "inWeighing": true,
+      "inboundBatch": "string",
+      "lastOperator": {
+        "active": true,
+        "fake": true,
+        "id": 0,
+        "name": "string"
+      },
+      "material": {
+        "code": "string",
+        "desc": "string",
+        "name": "string",
+        "unit": "string"
+      },
+      "materialCode": "string",
+      "mfgBatches": [
+        {
+          "materialCode": "string",
+          "mfgBatchNo": "string"
+        }
+      ],
+      "originPlace": "string",
+      "procureOrder": "string",
+      "productBatch": "string",
+      "productionDate": "2019-09-17T06:25:11.315Z",
+      "projectCode": "string",
+      "purchaseOrderCode": "string",
+      "qcStatus": 0,
+      "qualityInspectTime": "2019-09-17T06:25:11.315Z",
+      "rawMaterialLots": [
+        {
+          "code": "string",
+          "id": 0,
+          "inboundBatch": "string",
+          "materialCode": "string",
+          "materialName": "string",
+          "mfgBatches": [
+            {
+              "materialCode": "string",
+              "mfgBatchNo": "string"
+            }
+          ],
+          "productBatch": "string"
+        }
+      ],
+      "remark": "string",
+      "specification": {
+        "denominator": 0,
+        "numerator": 0,
+        "unit": "string"
+      },
+      "status": 0,
+      "storageInfo": {
+        "code": "string",
+        "id": 0,
+        "name": "string",
+        "parentId": 0,
+        "parentName": "string",
+        "qualityControlItems": [
+          0
+        ],
+        "qualityControlSwitch": true,
+        "status": 0,
+        "warehouseCategory": 0,
+        "warehouseCode": "string",
+        "warehouseName": "string"
+      },
+      "supplier": {
+        "code": "string",
+        "name": "string",
+        "status": 0
+      },
+      "trallyingAt": "2019-09-17T06:25:11.315Z",
+      "unitConversions": [
+        {
+          "amount": 0,
+          "unit": "string"
+        }
+      ],
+      "validityPeriod": "2019-09-17T06:25:11.315Z",
+      "warehouse": {
+        "attachments": [
+          0
+        ],
+        "category": 0,
+        "code": "string",
+        "hasChildren": true,
+        "id": 0,
+        "name": "string",
+        "orgId": 0,
+        "qrCode": "string",
+        "qualityControlItems": [
+          0
+        ],
+        "qualityControlSwitch": true,
+        "remark": "string",
+        "status": 0,
+        "workshopId": "string",
+        "workshopName": "string"
+      },
+      "weighDetail": {
+        "amount": 0,
+        "level": 0,
+        "unit": "string"
+      },
+      "weighSplited": true
+    }
+  ],
+  "message": "string",
+  "statusCode": 0,
+  "total": 0
+}
+

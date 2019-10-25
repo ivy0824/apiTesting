@@ -22,7 +22,6 @@ public class RequestObject {
     public static int orgId = DataPrepare.orgId;
     public static int userId = DataPrepare.userId;
     public static String userName = "admin";
-    public static int workstationId = DataPrepare.workstationId;
 
 
     /**

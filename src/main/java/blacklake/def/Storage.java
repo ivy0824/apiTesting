@@ -33,4 +33,12 @@ public class Storage {
         ValidatableResponse response = RequestObject.postRequest(Environment.server_def,"/v1/storage", body);
         return response;
     }
+
+    public static int getStorageId(String code){
+        HashMap<String, String> param = new HashMap<String, String>();
+        param.put("code", code);
+        ValidatableResponse response = RequestObject.getRequest(Environment.server_def,"/v1/storage",param);
+        int storageId = response.extract().path("data[0].id");
+        return storageId;
+    }
 }

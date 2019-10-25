@@ -1,7 +1,9 @@
 package blacklake.schedule;
 
+import blacklake.def.Workstation;
 import common.JsonReader;
 import common.RequestObject;
+import config.DataPrepare;
 import config.Environment;
 import io.restassured.response.ValidatableResponse;
 import java.util.HashMap;
@@ -10,7 +12,7 @@ public class TaskSchedule {
 
     static Boolean locked = false;
     static int planAmount = 100;
-    static int workstation = RequestObject.workstationId;
+    static int workstation = Workstation.getWorkstationId(DataPrepare.workstationCode);;
     static int[] executorsIds = {RequestObject.userId};
     static String planBeginTime = "1566208800000";
     static String planEndTime = "1566209100000";

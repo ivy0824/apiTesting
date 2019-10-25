@@ -1,10 +1,11 @@
 package common;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import jdk.nashorn.internal.ir.ObjectNode;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -21,7 +22,7 @@ public class JsonReader {
         return documentContext.jsonString();
     }
 
-    public static HashMap getJson(String path,HashMap<String,Object> map){
+    public static ArrayList getJson(String path, HashMap<String,Object> map){
         System.out.println(JsonReader.class.getResourceAsStream(path));
         DocumentContext documentContext= JsonPath.parse(JsonReader.class
                 .getResourceAsStream(path));
@@ -31,6 +32,17 @@ public class JsonReader {
         System.out.println(documentContext);
         return documentContext.json();
     }
+
+    public static HashMap<String, Object> stringToMap(String str_json) {
+        HashMap<String, Object> res = null;
+        Gson gson = new Gson();
+        res = gson.fromJson(str_json, new TypeToken<HashMap<String, Object>>() {
+        }.getType());
+        return res;
+    }
+
+
+
 
 
 }

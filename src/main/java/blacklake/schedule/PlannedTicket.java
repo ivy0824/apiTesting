@@ -2,7 +2,6 @@ package blacklake.schedule;
 
 import common.JsonReader;
 import common.RequestObject;
-import common.StringToMap;
 import config.Environment;
 
 import java.util.HashMap;
@@ -37,7 +36,7 @@ public class PlannedTicket {
         String result;
         HashMap<String, Object> body = new HashMap<String, Object>();
         result = JsonReader.getJsonToString("/data/schedule/workOrder.json",map);
-        body = StringToMap.StringToMap(result);
+        body = JsonReader.stringToMap(result);
         if(ebomVersion==null & mbomVersion==null){
             body.remove("ebomVersion");
             body.remove("mbomVersion");

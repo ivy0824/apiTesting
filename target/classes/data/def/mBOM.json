@@ -21,6 +21,7 @@
           "nodeCode": "1",
           "processCode": "P82701",
           "preparationTime": 60001.2,
+          "primaryMaterialCode":"C82702",
           "preparationTimeCategory": 1,
           "workstationGroups": [
 
@@ -120,6 +121,12 @@
           ],
           "inputMaterials": [
             {
+              "materialCode": "C82702",
+              "amount": 1,
+              "currentUnitId": null,
+              "materialProductionMode": 1
+            },
+            {
               "materialCode": "C82703",
               "amount": 1,
               "currentUnitId": null,
@@ -127,7 +134,7 @@
             },
             {
               "materialCode": "C82704",
-              "amount": 2,
+              "amount": 1,
               "currentUnitId": null,
               "materialProductionMode": 1
             }

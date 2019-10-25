@@ -17,7 +17,6 @@ public class Workshop {
     }
 
     public static void updateWorkshopStatus(int id){
-        HashMap<String, String> body = new HashMap<String, String>();
-        RequestObject.putRequest(Environment.server_def, "/v1/workshops/"+id+"/enabled", body);
+        RequestObject.putRequest(Environment.server_def, "/v1/workshops/"+id+"/enabled","");
     }
 }

@@ -1,13 +1,19 @@
 package manufacture.produce;
 
 import blacklake.manufacture.ScanUse;
+import blacklake.manufacture.produce_task.getByCode;
 import common.RequestObject;
 import config.DataPrepare;
+import config.ManufactureData;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.Test;
-import params.ScanUseParams;
+import params.manufacture.ScanUseParams;
+
+import static config.ManufactureData.taskCode4;
 
 public class TestScanUse {
+
+    static int PEId1= getByCode.getTaskId(taskCode4,DataPrepare.PlannedTicketCode2) ;
 
     @Test(dataProvider = "getScanUseDate",dataProviderClass = ScanUseParams.class)
     private void testScanUse(int taskId,String code,int amount,String unit,int useMode,Boolean forced,int status,String msg){
@@ -16,7 +22,8 @@ public class TestScanUse {
         RequestObject.getStatus(response,status);
         RequestObject.getResponseMessage(response,"message",msg);
 
-        ScanUse.inputSummary(DataPrepare.PEId1);
+        ScanUse.inputSummary(PEId1);
     }
+
 
 }

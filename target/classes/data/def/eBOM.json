@@ -4,7 +4,7 @@
   "defNum":1,
   "rawMaterialList": [
   {
-    "amount": "2",
+    "amount": "3",
     "lossRate": "2",
     "materialCode": "",
     "regulatoryControl": true,
@@ -20,7 +20,7 @@
     "currentUnitId": ""
   },
   {
-    "amount": "4",
+    "amount": "3",
     "lossRate": "4",
     "materialCode": "",
     "regulatoryControl": true,

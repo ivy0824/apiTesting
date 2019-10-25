@@ -36,7 +36,14 @@ public class Workstation {
 
 
     public static void updateWorkstationStatus(int id){
-        HashMap<String, String> body = new HashMap<String, String>();
-        RequestObject.putRequest(Environment.server_def, "/v1/workstationAreas/"+id+"/enabled", body);
+        RequestObject.putRequest(Environment.server_def, "/v1/workstationAreas/"+id+"/enabled","");
+    }
+
+    public static int getWorkstationId(String name){
+        HashMap<String, String> param = new HashMap<String, String>();
+        param.put("name",name);
+        ValidatableResponse response = RequestObject.getRequest(Environment.server_def,"/v1/workstationAreas",param);
+        int workStationId=response.extract().path("data[0].id");
+        return workStationId;
     }
 }

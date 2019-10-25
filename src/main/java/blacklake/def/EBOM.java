@@ -1,18 +1,22 @@
 package blacklake.def;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import config.DataPrepare;
 import config.Environment;
 import io.restassured.response.ValidatableResponse;
 import common.JsonReader;
 import common.RequestObject;
-
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import static config.DataPrepare.unitName;
 
 //忽略序列化问题
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 
 public class EBOM {
+
+    static int unitId = Unit.getUnitId(unitName);
 
     private String productMaterialCode;
     private String productMaterialName;
@@ -42,10 +46,11 @@ public class EBOM {
                 '}';
     }
 
-    public static ValidatableResponse createEbom(String... materialCode){
+    public static ValidatableResponse createEbom(String version,String... materialCode){
         HashMap<String,Object> map=new HashMap<String, Object>();
         map.put("productMaterialCode",materialCode[0]);
-        map.put("currentUnitId", Unit.unitId+"");
+        map.put("currentUnitId", unitId +"");
+        map.put("version",version);
         map.put("rawMaterialList[0].materialCode",materialCode[1]);
         map.put("rawMaterialList[1].materialCode",materialCode[2]);
         map.put("rawMaterialList[2].materialCode",materialCode[3]);
